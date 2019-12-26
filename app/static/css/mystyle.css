@@ -1,0 +1,21 @@
+div#btn-add{
+    position: relative;
+    float: right;
+    margin: 20px auto;
+}
+
+a#active_doing{
+    background-color: LightGray;
+    color: #ffffff;
+}
+
+a#active_done{
+    background-color: LightGray;
+    color: #ffffff;
+}
+
+div#main-content{
+    position: relative;
+    margin-left: 60%;
+}
+

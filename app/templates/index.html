@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ super() }} - Index{% endblock %}
+
+
+{% block content %}
+    <main role="main">
+      <!-- container main content -->
+        <div class="container-fluid bg-primary w-100">
+          <div id="main-content" class="w-100 col-md-4 text-white my-5 py-5 ml-5">
+            <h2 class="text-uppercase">A SenseData garante o seu <strong>sucesso</strong>
+               através do sucesso dos seus <strong>clientes</strong>
+            </h2>
+            <p>O software de Customer Success do
+               Brasil, usando tecnologia para construir
+               relacionamentos de confiança entre a sua
+               empresa e os seus clientes.
+            </p>
+          </div>
+        </div>
+    
+        <div class="container">
+          <!-- Register and login options -->
+          <div class="row  w-100">
+            <div class="col-md-4 col-lg-4 shadow-lg p-3 my-3 mr-3 ml-auto border rounded">
+              <h2 class="text-dark">Cadastro</h2>
+              <p>Lorem Ipsum is simply dummy text
+                  of the printing and typesetting 
+                  industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever
+                  since the 1500s, when an unknown
+                  printer took a galley of type and
+                  scrambled it to make a type specimen
+                  book.
+              </p>
+              <p><a class="btn btn-primary" href="{{ url_for('register') }}" role="button">Resgister &raquo;</a></p>
+            </div>
+            <div class="col-md-4 col-lg-4 shadow p-3 my-3 ml-3 mr-auto  border rounded">
+              <h2 class="text-dark">Login</h2>
+              <p>Lorem Ipsum is simply dummy text
+                of the printing and typesetting 
+                industry. Lorem Ipsum has been the
+                industry's standard dummy text ever
+                since the 1500s, when an unknown
+                printer took a galley of type and
+                scrambled it to make a type specimen
+                book.
+            </p>
+              <p><a class="btn btn-primary" href="{{ url_for('login') }}" role="button">Enter &raquo;</a></p>
+            </div>
+          </div>      
+        </div> <!-- /container -->
+    </main>
+  
+<br><br><br><br>
+<br><br><br><br>
+<div class="container mx-auto border border-bottom border-dark"></div>
+<br>
+{% endblock %}
