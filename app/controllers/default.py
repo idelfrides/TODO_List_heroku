@@ -21,7 +21,8 @@ def load_user(id):
 @app.route('/index')
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return 'Hello World!!!'
+    # return render_template('index.html')
 
 
 # ---------------------------------------
