@@ -71,7 +71,8 @@ def login():
     form = LoginForm()
   
     if form.validate_on_submit():
-        user = User.query.filter_by(username=form.username.data).first()
+        user = User.query.filter_by(
+            username=form.username.data).first()
         
         if not user:
             flash(u'Invalid Login. Wrong username', 'danger') 
@@ -123,7 +124,8 @@ def task_insert():
     return redirect(url_for('task_doing'))
 
 
-@app.route('/task_pre_update/<int:task_id>', methods=['GET', 'POST'])
+@app.route('/task_pre_update/<int:task_id>', 
+    methods=['GET', 'POST'])
 @login_required
 def task_pre_update(task_id):
        
@@ -136,7 +138,8 @@ def task_pre_update(task_id):
     )
 
 
-@app.route('/task_update/<int:task_id>', methods=['GET', 'POST'])
+@app.route('/task_update/<int:task_id>', 
+    methods=['GET', 'POST'])
 @login_required
 def task_update(task_id):
     task_form = TaskForm()   
