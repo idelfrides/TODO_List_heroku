@@ -92,6 +92,7 @@ def login():
             myform=form
         )
 
+
 # ---------------------------------------
 #     TASK: CRUD AND OTHERS METHODS
 #----------------------------------------
@@ -255,6 +256,3 @@ def task_done():
 def logout():
     logout_user()
     return redirect(url_for('index'))
-
-
-

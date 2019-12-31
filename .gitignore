@@ -9,6 +9,7 @@ pagecapvenv/
 helper_folder/
 helper_ignored/
 
+database.yml
 
 # -----------------------------------
 
