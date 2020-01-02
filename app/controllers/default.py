@@ -15,7 +15,7 @@ def load_user(id):
 
 
 # ---------------------------------------
-#             INDEX METHODS 
+#   INDEX/HOME PAGE CONTROLLER METHOD
 #----------------------------------------
 @app.route('/home')
 @app.route('/index')
@@ -65,7 +65,7 @@ def register():
             myform=form
         )
         
-   
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()

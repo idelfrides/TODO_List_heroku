@@ -15,6 +15,7 @@ app.config.from_object('config')
 
 db = SQLAlchemy(app)
 
+
 migrate = Migrate(app, db)
 
 manager = Manager(app)
@@ -22,10 +23,6 @@ manager.add_command('db', MigrateCommand)
 
 login_manager = LoginManager(app)
 
-'''
-def getDB():
-    return db
-'''
 
 def getApp():
     return app
