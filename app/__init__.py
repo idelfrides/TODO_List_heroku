@@ -16,7 +16,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 db = SQLAlchemy(app)
 
 '''
-
 migrate = Migrate(app, db)
 
 manager = Manager(app)
