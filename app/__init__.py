@@ -10,8 +10,8 @@ app = Flask(__name__)
 
 # Configurations
 app.config.from_object('config')
-# app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'XYZ')
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 
 db = SQLAlchemy(app)
 
