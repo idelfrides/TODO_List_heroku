@@ -1,5 +1,8 @@
-from app import manager
+from app import getApp
+# manager
 
 
 if __name__=='__main__':
-    manager.run()
+    app = getApp()
+    app.run()
+    # manager.run()
