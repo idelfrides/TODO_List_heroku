@@ -22,3 +22,5 @@ SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 # heroku config:set PYTHONPATH=TODO_List_heroku
 # base_dir = os.path.abspath(os.path.dirname(__file__))
+
+    # gem 'activerecord-postgresql-adapter'
