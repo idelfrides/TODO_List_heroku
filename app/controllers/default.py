@@ -26,9 +26,8 @@ def index():
 
 
 # ---------------------------------------
-#             METHODS FOR USER 
+#            METHODS FOR USER 
 #----------------------------------------
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegisterForm()
@@ -96,7 +95,6 @@ def login():
 # ---------------------------------------
 #     TASK: CRUD AND OTHERS METHODS
 #----------------------------------------
-
 @app.route('/task_insert', methods=['GET', 'POST'])
 @login_required
 def task_insert(): 
@@ -207,6 +205,9 @@ def task_delete():
     )
 
 
+# ---------------------------------------
+#   TASK: IN EXECUTION AND COMPLETE
+#----------------------------------------
 @app.route('/task_doing', methods=['GET', 'POST'])
 @login_required
 def task_doing():
@@ -251,6 +252,9 @@ def task_done():
     )
 
 
+# ---------------------------------------
+#         USER: logout method
+#----------------------------------------
 @app.route('/logout')
 @login_required
 def logout():
